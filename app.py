@@ -30,7 +30,6 @@ def artifact_path(filename):
 def load_artifacts():
     linear_artifact = joblib.load(artifact_path("linear_regression_model.sav"))
     logistic_artifact = joblib.load(artifact_path("logistic_regression_model.sav"))
-    metadata_artifact = joblib.load(artifact_path("model_metadata.sav"))
     return (
         linear_artifact["model"],
         logistic_artifact["model"],
